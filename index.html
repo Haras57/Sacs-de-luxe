@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Luxury Icons - Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset et base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(145deg, #000000, #111111);
+      color: #d4af37;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Header stylé */
+    header {
+      padding: 120px 20px;
+      background: url('https://images.unsplash.com/photo-1555529669-7aa8e50330c0?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      position: relative;
+      color: #fff;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 5em;
+      letter-spacing: 6px;
+      color: #ffd700;
+      text-shadow: 0 0 15px #ffd700, 0 0 30px #d4af37;
+      position: relative;
+      z-index: 1;
+    }
+    header p {
+      font-size: 1.6em;
+      font-style: italic;
+      color: #f5f5f5;
+      margin-top: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Navigation stylée */
+    nav {
+      margin: 60px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      z-index: 2;
+      position: relative;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 16px 40px;
+      border-radius: 50px;
+      border: 2px solid #ffd700;
+      color: #ffd700;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+      background: rgba(0,0,0,0.2);
+      text-shadow: 0 0 5px #ffd700;
+    }
+    nav a:hover {
+      background: #ffd700;
+      color: #000000;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #ffd700;
+    }
+
+    /* Section principale */
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      line-height: 1.9;
+      font-size: 1.25em;
+      color: #e0e0e0;
+      text-align: justify;
+    }
+    section p::first-letter {
+      font-size: 2.2em;
+      font-weight: bold;
+      color: #ffd700;
+      float: left;
+      margin-right: 8px;
+    }
+
+    /* Footer élégant */
+    footer {
+      margin-top: 80px;
+      padding: 30px;
+      background-color: #111111;
+      font-size: 0.95em;
+      color: #888888;
+      border-top: 1px solid #d4af37;
+    }
+
+    /* Animations subtiles */
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 15px #ffd700, 0 0 30px #d4af37; }
+      50% { text-shadow: 0 0 25px #ffd700, 0 0 50px #d4af37; }
+    }
+    header h1 {
+      animation: glow 3s infinite alternate;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 3em; }
+      header p { font-size: 1.2em; }
+      nav a { padding: 12px 25px; font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Luxury Icons</h1>
+    <p>"Le style n’est pas une option… c’est une signature."</p>
+  </header>
+
+  <nav>
+    <a href="hermes.html">Hermès</a>
+    <a href="chanel.html">Chanel</a>
+    <a href="gucci.html">Gucci</a>
+    <a href="louisvuitton.html">Louis Vuitton</a>
+    <a href="balenciaga.html">Balenciaga</a>
+  </nav>
+
+  <section>
+    <p>
+      Plonge dans l’univers fascinant des sacs de luxe les plus iconiques au monde.  
+      Découvre l’histoire, les ambassadeurs et les modèles les plus célèbres des maisons mythiques comme Hermès, Chanel, Gucci, Louis Vuitton et Balenciaga.  
+      Un voyage dans le luxe sombre, l’élégance et la mode ultime.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Luxury Icons | Créé par Sarah
+  </footer>
+</body>
+</html>

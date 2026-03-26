@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Louis Vuitton - Luxury Icons</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fdf6e3; /* Fond beige clair */
+      color: #3C2210; /* Texte brun foncé */
+      text-align: center;
+    }
+
+    /* Header */
+    header {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #3C2210, #714C30);
+      border-bottom: 3px solid #BD9302; /* Doré */
+      position: relative;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4em;
+      letter-spacing: 5px;
+      color: #FFD700;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px #BD9302, 0 0 25px #FFD700;
+      animation: glow 3s infinite alternate;
+    }
+
+    /* Navigation */
+    nav {
+      margin: 50px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 12px 35px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1.1em;
+      color: #BD9302;
+      border: 2px solid #BD9302;
+      background: rgba(189,147,2,0.05);
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #BD9302;
+      color: #000000;
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #BD9302;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+      line-height: 1.8;
+      font-size: 1.15em;
+      text-align: justify;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      margin-bottom: 25px;
+      color: #BD9302;
+      border-bottom: 2px solid #714C30;
+      display: inline-block;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    /* Histoire */
+    .history {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .history img {
+      max-width: 200px;
+      border: 2px solid #BD9302;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .history img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #BD9302;
+    }
+    .history p { flex:1; padding: 0 20px; }
+
+    /* Cartes ambassadeurs et sacs */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background-color: #FFF0D4; /* Beige doux */
+      border: 2px solid #BD9302;
+      border-radius: 12px;
+      padding: 25px;
+      transition: 0.3s;
+      color: #3C2210;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background-color: #714C30; /* Marron LV au survol */
+      color: #FFD700;
+      box-shadow: 0 0 20px #BD9302;
+    }
+    .card h3 { margin-bottom: 12px; color: #BD9302; }
+    .card:hover h3 { color: #FFD700; }
+
+    .btn-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 20px;
+      border: 1px solid #BD9302;
+      border-radius: 25px;
+      text-decoration: none;
+      color: #BD9302;
+      font-size: 0.95em;
+      transition: 0.3s;
+    }
+    .btn-link:hover {
+      background-color: #BD9302;
+      color: #000000;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 60px;
+      padding: 25px;
+      background-color: #3C2210;
+      font-size: 0.95em;
+      color: #FFD700;
+      border-top: 2px solid #BD9302;
+    }
+
+    /* Glow animation */
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 10px #BD9302, 0 0 25px #FFD700; }
+      50% { text-shadow: 0 0 20px #BD9302, 0 0 40px #FFD700; }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 3em; }
+      nav a { padding: 10px 20px; font-size: 1em; }
+      .history { flex-direction: column; }
+      .history img { margin-bottom: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Louis Vuitton</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="hermes.html">Hermès</a>
+    <a href="chanel.html">Chanel</a>
+    <a href="gucci.html">Gucci</a>
+    <a href="balenciaga.html">Balenciaga</a>
+  </nav>
+
+  <section>
+    <h2>Histoire</h2>
+    <div class="history">
+      <img src="images/logo-louisvuitton.jpg" alt="Logo Louis Vuitton">
+      <p>
+        Fondée en 1854 à Paris par Louis Vuitton, 
+        un layetier-emballeur visionnaire, la maison est née de la création de 
+        malles plates, révolutionnaires pour le transport. 
+        Grâce à un savoir-faire d'excellence, l'innovation (toile monogramme) 
+        et l'internationalisation par son fils Georges, elle est devenue le symbole
+        mondial du luxe et du voyage.
+      </p>
+      <img src="images/louis-vuitton.jpg" alt="Louis Vuitton">
+    </div>
+  </section>
+
+  <section>
+    <h2>Ambassadeurs</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Emma Stone</h3>
+        <a class="btn-link" href="https://fr.wikipedia.org/wiki/Emma_Stone" target="_blank">Voir le profil</a>
+      </div>
+      <div class="card">
+        <h3>BTS</h3>
+        <a class="btn-link" href="https://fr.wikipedia.org/wiki/BTS_(groupe)" target="_blank">Voir le profil</a>
+      </div>
+      <div class="card">
+        <h3>Felix (Stray Kids)</h3>
+        <a class="btn-link" href="https://en.wikipedia.org/wiki/Felix_(Stray_Kids)" target="_blank">Voir le profil</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sacs iconiques</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Speedy</h3>
+        <p>Un sac emblématique, pratique et élégant.</p>
+        <a class="btn-link" href="https://fr.louisvuitton.com/fra-fr/produits/speedy" target="_blank">Découvrir sur Louis Vuitton</a>
+      </div>
+      <div class="card">
+        <h3>Neverfull</h3>
+        <p>Un sac spacieux et intemporel, parfait au quotidien.</p>
+        <a class="btn-link" href="https://fr.louisvuitton.com/fra-fr/produits/neverfull" target="_blank">Découvrir sur Louis Vuitton</a>
+      </div>
+      <div class="card">
+        <h3>Capucines</h3>
+        <p>Un sac moderne et raffiné, symbole du savoir-faire LV.</p>
+        <a class="btn-link" href="https://fr.louisvuitton.com/fra-fr/produits/capucines" target="_blank">Découvrir sur Louis Vuitton</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Luxury Icons | Louis Vuitton
+  </footer>
+
+</body>
+</html>

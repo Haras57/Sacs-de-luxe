@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chanel - Luxury Icons</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff; /* fond blanc classique */
+      color: #111111;
+      text-align: center;
+    }
+
+    /* Header luxueux */
+    header {
+      background-color: #000000; /* noir emblématique */
+      padding: 80px 20px;
+      position: relative;
+      color: #ffd700;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4em;
+      letter-spacing: 5px;
+      color: #ffd700; /* doré pour luxe */
+      text-transform: uppercase;
+      text-shadow: 0 0 10px #ffd700, 0 0 25px #d4af37;
+      animation: glow 3s infinite alternate;
+    }
+
+    /* Navigation élégante */
+    nav {
+      margin: 50px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 12px 35px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1.1em;
+      color: #000000;
+      border: 2px solid #ffd700;
+      background: rgba(255,215,0,0.05);
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #ffd700;
+      color: #000000;
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #ffd700;
+    }
+
+    /* Section principale */
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+      line-height: 1.8;
+      font-size: 1.15em;
+      text-align: justify;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      margin-bottom: 25px;
+      color: #000000;
+      border-bottom: 2px solid #ffd700;
+      display: inline-block;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    /* Histoire avec logo et portrait */
+    .history {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .history img {
+      max-width: 200px;
+      border: 2px solid #ffd700;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .history img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ffd700;
+    }
+    .history p { flex: 1; padding: 0 20px; }
+
+    /* Cartes ambassadeurs et sacs */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background-color: #f8f8f8;
+      border: 1px solid #ffd700;
+      border-radius: 12px;
+      padding: 25px;
+      transition: 0.3s;
+      color: #111111;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background-color: #000000;
+      color: #ffd700;
+      box-shadow: 0 0 20px #ffd700;
+    }
+    .card h3 { margin-bottom: 12px; color: #000000; }
+    .card:hover h3 { color: #ffd700; }
+
+    .btn-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 20px;
+      border: 1px solid #ffd700;
+      border-radius: 25px;
+      text-decoration: none;
+      color: #000000;
+      font-size: 0.95em;
+      transition: 0.3s;
+    }
+    .btn-link:hover {
+      background-color: #ffd700;
+      color: #000000;
+    }
+
+    /* Footer élégant */
+    footer {
+      margin-top: 60px;
+      padding: 25px;
+      background-color: #000000;
+      font-size: 0.95em;
+      color: #ffd700;
+      border-top: 2px solid #ffd700;
+    }
+
+    /* Animation glow */
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 10px #ffd700, 0 0 25px #d4af37; }
+      50% { text-shadow: 0 0 20px #ffd700, 0 0 40px #d4af37; }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 3em; }
+      nav a { padding: 10px 20px; font-size: 1em; }
+      .history { flex-direction: column; }
+      .history img { margin-bottom: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chanel</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="hermes.html">Hermès</a>
+    <a href="gucci.html">Gucci</a>
+    <a href="louisvuitton.html">Louis Vuitton</a>
+    <a href="balenciaga.html">Balenciaga</a>
+  </nav>
+
+  <section>
+    <h2>Histoire</h2>
+    <div class="history">
+      <img src="images/logo-chanel.jpg" alt="Logo Chanel">
+      <p>
+        Fondée en 1910 à Paris par Gabrielle « Coco » Chanel, 
+        la maison Chanel a révolutionné la mode en libérant les femmes du corset, 
+        introduisant confort et élégance moderne (jersey, petite robe noire, 
+        tailleur en tweed). Marquée par des débuts modestes, 
+        Coco Chanel a bâti un empire de luxe avec le parfum N°5, 
+        des sacs matelassés et des bijoux.
+      </p>
+      <img src="images/coco-chanel.jpg" alt="Coco Chanel">
+    </div>
+  </section>
+
+  <section>
+    <h2>Ambassadeurs</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Jennie (BLACKPINK)</h3>
+        <a class="btn-link" href="https://fr.wikipedia.org/wiki/Jennie_Kim" target="_blank">Voir le profil</a>
+      </div>
+      <div class="card">
+        <h3>Margot Robbie</h3>
+        <a class="btn-link" href="https://fr.wikipedia.org/wiki/Margot_Robbie" target="_blank">Voir le profil</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sacs iconiques</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>2.55</h3>
+        <p>Créé par Coco Chanel en 1955, un sac révolutionnaire.</p>
+        <a class="btn-link" href="https://www.chanel.com/fr/mode/2-55/" target="_blank">Découvrir sur Chanel</a>
+      </div>
+      <div class="card">
+        <h3>Classic Flap</h3>
+        <p>Le sac intemporel, symbole du chic Chanel.</p>
+        <a class="btn-link" href="https://www.chanel.com/fr/mode/classic-flap/" target="_blank">Découvrir sur Chanel</a>
+      </div>
+      <div class="card">
+        <h3>Boy Bag</h3>
+        <p>Un style moderne et audacieux, inspiré par l’amour de Coco Chanel.</p>
+        <a class="btn-link" href="https://www.chanel.com/fr/mode/boy-bag/" target="_blank">Découvrir sur Chanel</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Luxury Icons | Chanel
+  </footer>
+
+</body>
+</html>
